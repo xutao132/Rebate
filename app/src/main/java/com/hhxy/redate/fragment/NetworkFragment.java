@@ -37,6 +37,8 @@ public class NetworkFragment extends Fragment{
         
     }
     private void findview() {
+        
+        
     }
 
    ///**当从Activity中解除Fragment的关联时
