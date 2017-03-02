@@ -12,11 +12,23 @@
       android:layout_below="@+id/liner"
         android:id="@+id/network_gridlayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        
-        
-        
-    </android.support.v7.widget.RecyclerView>
+        android:layout_height="match_parent"/>
+    
+        <com.hhxy.redate.view.RecyclerViewHeader
+            android:id="@+id/recyclerviewheader"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               
+               
+               
+           </RelativeLayout>
+            
+            
+            
+        </com.hhxy.redate.view.RecyclerViewHeader>
     
     
 </RelativeLayout>
