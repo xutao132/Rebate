@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">Redate</string>
+    <string name="app_name">返利</string>
+    <string name="start_button">跳过</string>
+    <string name="rb_index">首页</string>
+    <string name="rb_network_mall">全网商城</string>
+    <string name="rb_manage_money">理财返利</string>
+    <string name="rb_eat_play">吃完住行</string>
+    <string name="rb_my">我的</string>
+
 </resources>
