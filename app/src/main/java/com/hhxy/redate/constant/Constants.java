@@ -7,7 +7,6 @@ package com.hhxy.redate.constant;
 public class Constants {
     //欢迎界面image
     String WELCOME_IMAGE1 = "http://l3.51fanli.net/app/images/splash/2016/12/5865d4155d970.jpg";
-
     String WELCOME_IMAGE = "http://fun.fanli.com/api/mobile/getResource?src=2&v=5.7.0.34&mc=24&nt=wifi&carrier=1&key=dynamic";
     //主界面
     String MAIN_URL = "http://fun.fanli.com/mobileapi/v1/device/getQuickEntry?src=2&v=5.7.0.34&mc=24";
