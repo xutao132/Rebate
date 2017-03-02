@@ -32,12 +32,10 @@ public class NetworkFragment extends Fragment{
         initdate();
         return view;
     }
-
     private void initdate() {
         findview();
         
     }
-
     private void findview() {
     }
 
