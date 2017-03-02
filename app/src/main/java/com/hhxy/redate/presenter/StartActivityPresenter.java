@@ -1,8 +1,11 @@
 package com.hhxy.redate.presenter;
 
+import android.content.Context;
 import android.util.Log;
 
+import com.bumptech.glide.Glide;
 import com.hhxy.redate.view.IStartActivity;
+import com.hhxy.redate.view.StartActivity;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -15,7 +18,15 @@ import org.xutils.x;
  * Created by Administrator on 2017/3/1.
  */
 
-public class StartActivityPresenter implements IStartActivity {
+public class StartActivityPresenter
+        implements IStartActivity {
+    private IstartActivityPresenter istartActivityPresenter;
+
+    public StartActivityPresenter(Context context) {
+        if (context instanceof IstartActivityPresenter)
+        this.istartActivityPresenter = (IstartActivityPresenter) context;
+    }
+
     @Override
     public void getWellCome(String WellComeURL) {
         x.http().get(new RequestParams(WellComeURL), new Callback.CommonCallback<String>() {
@@ -25,13 +36,10 @@ public class StartActivityPresenter implements IStartActivity {
                 AnalysisJsonResult(result);
 
             }
-
-
             @Override
             public void onError(Throwable ex, boolean isOnCallback) {
 
             }
-
             @Override
             public void onCancelled(CancelledException cex) {
 
@@ -59,11 +67,12 @@ public class StartActivityPresenter implements IStartActivity {
                     JSONObject jsonObject = jsonArray.getJSONObject(i);
                     String fgFileUrl = jsonObject.getString("fgFileUrl");
                     Log.e("=======fgFileUrl=",fgFileUrl);
+                    istartActivityPresenter.getStartActivityImagePath(fgFileUrl);
                 }
-
             } catch (JSONException e) {
                 e.printStackTrace();
             }
         }
     }
+
 }

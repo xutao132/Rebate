@@ -6,4 +6,5 @@ package com.hhxy.redate.view;
 
 public interface IStartActivity {
     public void getWellCome(String WellComeURL);
+
 }

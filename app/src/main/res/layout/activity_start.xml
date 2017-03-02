@@ -8,7 +8,9 @@
     <ImageView
         android:id="@+id/mImageView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:onClick="ImageButton"/>
     <TextView
         android:id="@+id/mTextView"
         android:layout_width="60dp"
@@ -17,5 +19,6 @@
         android:gravity="center"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="280dp"
-        android:background="@drawable/startactivity_shape" />
+        android:background="@drawable/startactivity_shape"
+        android:onClick="TextViewButton"/>
 </RelativeLayout>
