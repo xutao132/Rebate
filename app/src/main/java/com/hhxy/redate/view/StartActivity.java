@@ -1,18 +1,16 @@
 package com.hhxy.redate.view;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.hhxy.redate.MainActivity;
 import com.hhxy.redate.R;
 import com.hhxy.redate.constant.Constants;
 import com.hhxy.redate.presenter.StartActivityPresenter;
-
 public class StartActivity extends AppCompatActivity {
 
     private TextView mTextView;

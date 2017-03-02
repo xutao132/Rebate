@@ -3,11 +3,20 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
     <LinearLayout
+        android:id="@+id/liner"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <include layout="@layout/top_item"/>
     </LinearLayout>
-    
+    <android.support.v7.widget.RecyclerView
+      android:layout_below="@+id/liner"
+        android:id="@+id/network_gridlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        
+        
+    </android.support.v7.widget.RecyclerView>
     
     
 </RelativeLayout>
