@@ -10,15 +10,15 @@ import android.view.ViewGroup;
 import com.hhxy.redate.R;
 
 /**
- * Created by Administrator on 2017/3/1.
- * 我的
+ * Created by Administrator on 2017/3/2.
+ * 首页
  */
 
-public class MyFragment extends Fragment{
+public class IndexFragment extends Fragment{
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.my_fragment,null);
+        View view = inflater.inflate(R.layout.index_fragment,null);
         return view;
     }
 }

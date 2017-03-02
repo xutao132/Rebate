@@ -12,6 +12,7 @@ import com.hhxy.redate.R;
 
 /**
  * Created by Administrator on 2017/3/1.
+ * 全网商城
  */
 
 public class NetworkFragment extends Fragment{

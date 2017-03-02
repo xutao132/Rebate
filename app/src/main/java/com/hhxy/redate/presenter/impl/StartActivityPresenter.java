@@ -1,11 +1,10 @@
-package com.hhxy.redate.presenter;
+package com.hhxy.redate.presenter.impl;
 
 import android.content.Context;
 import android.util.Log;
 
-import com.bumptech.glide.Glide;
+import com.hhxy.redate.presenter.IstartActivityPresenter;
 import com.hhxy.redate.view.IStartActivity;
-import com.hhxy.redate.view.StartActivity;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -34,7 +33,6 @@ public class StartActivityPresenter
             public void onSuccess(String result) {
                 //Log.e("=====result=", result);
                 AnalysisJsonResult(result);
-
             }
             @Override
             public void onError(Throwable ex, boolean isOnCallback) {

@@ -1,12 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.hhxy.redate.MainActivity">
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+    </FrameLayout>
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D3D3D3"
+        />
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/rb_index"
+            style="@style/rbStyle"
+            android:text="@string/rb_index"
+            android:drawableTop="@drawable/index_rb_selector"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_network"
+            style="@style/rbStyle"
+            android:text="@string/rb_network_mall"
+            android:drawableTop="@drawable/networkmall_rb_selector"
+            />
+        <RadioButton
+            android:id="@+id/rb_managemoney"
+            style="@style/rbStyle"
+            android:text="@string/rb_manage_money"
+            android:drawableTop="@drawable/managemoney_rb_selector"
+            />
+        <RadioButton
+            android:id="@+id/rb_eatplay"
+            style="@style/rbStyle"
+            android:text="@string/rb_eat_play"
+            android:drawableTop="@drawable/eatpaly_rb_selector"
+            />
+        <RadioButton
+            android:id="@+id/rb_my"
+            style="@style/rbStyle"
+            android:text="@string/rb_my"
+            android:drawableTop="@drawable/my_rb_selector"
+            />
+    </RadioGroup>
+</LinearLayout>
