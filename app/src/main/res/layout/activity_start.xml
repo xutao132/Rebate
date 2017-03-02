@@ -4,10 +4,18 @@
     android:id="@+id/activity_start"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.hhxy.redate.view.StartActivity">
-
+    <ImageView
+        android:id="@+id/mImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/mTextView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="@string/start_button"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="280dp"
+        android:background="@drawable/startactivity_shape" />
 </RelativeLayout>
