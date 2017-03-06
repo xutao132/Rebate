@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.hhxy.redate">
-
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
 
     <application
         android:name=".utils.MyXutils"
@@ -27,6 +26,12 @@
         <activity android:name=".view.TakeActivity" />
         <activity android:name=".view.VoitmeActivity" />
         <activity android:name=".view.CardActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".view.UsableRebateActivity" />
+        <activity android:name=".view.MessageActivity"></activity>
+        <activity android:name=".view.TotalRebateActivity"/>
+        <activity android:name=".view.StayRebateActivity"/>
+        <activity android:name=".view.SetActivity"/>
     </application>
 
 </manifest>

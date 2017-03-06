@@ -13,48 +13,56 @@
         android:layout_weight="1"
         >
     </FrameLayout>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#D3D3D3"
-        />
-    <RadioGroup
-        android:id="@+id/radioGroup"
+    <LinearLayout
+        android:id="@+id/foot_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         >
-        <RadioButton
-            android:id="@+id/rb_index"
-            style="@style/rbStyle"
-            android:text="@string/rb_index"
-            android:drawableTop="@drawable/index_rb_selector"
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D3D3D3"
             />
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:id="@+id/rb_index"
+                style="@style/rbStyle"
+                android:text="@string/rb_index"
+                android:drawableTop="@drawable/index_rb_selector"
+                />
 
-        <RadioButton
-            android:id="@+id/rb_network"
-            style="@style/rbStyle"
-            android:text="@string/rb_network_mall"
-            android:drawableTop="@drawable/networkmall_rb_selector"
-            />
-        <RadioButton
-            android:id="@+id/rb_managemoney"
-            style="@style/rbStyle"
-            android:text="@string/rb_manage_money"
-            android:drawableTop="@drawable/managemoney_rb_selector"
-            />
-        <RadioButton
-            android:id="@+id/rb_eatplay"
-            style="@style/rbStyle"
-            android:text="@string/rb_eat_play"
-            android:drawableTop="@drawable/eatpaly_rb_selector"
-            />
-        <RadioButton
-            android:id="@+id/rb_my"
-            style="@style/rbStyle"
-            android:text="@string/rb_my"
-            android:drawableTop="@drawable/my_rb_selector"
-            />
-    </RadioGroup>
+            <RadioButton
+                android:id="@+id/rb_network"
+                style="@style/rbStyle"
+                android:text="@string/rb_network_mall"
+                android:drawableTop="@drawable/networkmall_rb_selector"
+                />
+            <RadioButton
+                android:id="@+id/rb_managemoney"
+                style="@style/rbStyle"
+                android:text="@string/rb_manage_money"
+                android:drawableTop="@drawable/managemoney_rb_selector"
+                />
+            <RadioButton
+                android:id="@+id/rb_eatplay"
+                style="@style/rbStyle"
+                android:text="@string/rb_eat_play"
+                android:drawableTop="@drawable/eatpaly_rb_selector"
+                />
+            <RadioButton
+                android:id="@+id/rb_my"
+                style="@style/rbStyle"
+                android:text="@string/rb_my"
+                android:drawableTop="@drawable/my_rb_selector"
+                />
+        </RadioGroup>
+    </LinearLayout>
+
 </LinearLayout>
