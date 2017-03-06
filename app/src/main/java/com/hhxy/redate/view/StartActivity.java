@@ -5,8 +5,12 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.hhxy.redate.MainActivity;
@@ -15,10 +19,11 @@ import com.hhxy.redate.constant.Constants;
 import com.hhxy.redate.presenter.IstartActivityPresenter;
 import com.hhxy.redate.presenter.impl.StartActivityPresenter;
 
-public class StartActivity extends AppCompatActivity implements IstartActivityPresenter {
+public class StartActivity extends AppCompatActivity
+        implements IstartActivityPresenter{
     private TextView mTextView;
     private ImageView mImageView;
-    private int i = 4;
+    private int i = 5;
     private IStartActivity mIStartActivity;
     private boolean flag = true;
     Handler handler = new Handler() {
@@ -41,6 +46,8 @@ public class StartActivity extends AppCompatActivity implements IstartActivityPr
         }
     };
 
+
+    private RecyclerView mRecyclerView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,7 +55,6 @@ public class StartActivity extends AppCompatActivity implements IstartActivityPr
         init();
         mIStartActivity = new StartActivityPresenter(this);
         mIStartActivity.getWellCome(Constants.WELCOME_IMAGE);
-
     }
 
     public void ImageButton(View view) {
@@ -69,6 +75,8 @@ public class StartActivity extends AppCompatActivity implements IstartActivityPr
         findview();
         setData();
     }
+
+
 
     private void setData() {
         new Thread(new Runnable() {
@@ -92,7 +100,6 @@ public class StartActivity extends AppCompatActivity implements IstartActivityPr
     private void findview() {
         mTextView = (TextView) findViewById(R.id.mTextView);
         mImageView = (ImageView) findViewById(R.id.mImageView);
-
     }
 
     @Override
@@ -102,4 +109,6 @@ public class StartActivity extends AppCompatActivity implements IstartActivityPr
                 .error(android.R.drawable.ic_menu_share)
                 .into(mImageView);
     }
+
+
 }

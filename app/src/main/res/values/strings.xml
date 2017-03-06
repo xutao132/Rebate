@@ -7,5 +7,8 @@
     <string name="rb_manage_money">理财返利</string>
     <string name="rb_eat_play">吃完住行</string>
     <string name="rb_my">我的</string>
+    <string name="rb_index_searchView">搜淘宝/京东宝贝  拿返利</string>
+    <string name="rb_index_searchView_new">消息</string>
+    <string name="rb_index_SuperReturn_new">超级返</string>
 
 </resources>

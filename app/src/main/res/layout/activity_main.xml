@@ -54,7 +54,7 @@
                 android:id="@+id/rb_eatplay"
                 style="@style/rbStyle"
                 android:text="@string/rb_eat_play"
-                android:drawableTop="@drawable/eatpaly_rb_selector"
+               android:drawableTop="@drawable/eatpaly_rb_selector"
                 />
             <RadioButton
                 android:id="@+id/rb_my"

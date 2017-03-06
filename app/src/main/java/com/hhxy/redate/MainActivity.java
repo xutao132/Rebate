@@ -1,5 +1,4 @@
 package com.hhxy.redate;
-
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -12,7 +11,6 @@ import com.hhxy.redate.fragment.IndexFragment;
 import com.hhxy.redate.fragment.ManageMoneyFragment;
 import com.hhxy.redate.fragment.MyFragment;
 import com.hhxy.redate.fragment.NetworkFragment;
-
 /**
  * 主页
  */
@@ -41,7 +39,6 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         manageMoneyFragment = new ManageMoneyFragment();
         eatPalyFragment = new EatPalyFragment();
         myFragment = new MyFragment();
-
         //默认加载加载第一个碎片
         manager = getFragmentManager();
         transaction = manager.beginTransaction();
@@ -56,7 +53,6 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         transaction.hide(eatPalyFragment);
         transaction.hide(myFragment);
         transaction.commit();
-
     }
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
