@@ -11,10 +11,10 @@ import android.widget.TextView;
 
 import com.hhxy.redate.R;
 import com.hhxy.redate.view.CardActivity;
-import com.hhxy.redate.view.GroupActivity;
-import com.hhxy.redate.view.TakeActivity;
+import com.hhxy.redate.view.ShopingRebataActivity;
+import com.hhxy.redate.view.HungryActivity;
 import com.hhxy.redate.view.TourActivity;
-import com.hhxy.redate.view.VoitmeActivity;
+import com.hhxy.redate.view.CinemaTicketActivity;
 
 /**
  * Created by Administrator on 2017/3/2.
@@ -59,16 +59,16 @@ public class EatPalyFragment extends Fragment{
                   startActivity(new Intent(getActivity(), CardActivity.class));
               break;
               case R.id.take_out:
-                  startActivity(new Intent(getActivity(), TakeActivity.class));
+                  startActivity(new Intent(getActivity(), HungryActivity.class));
                   break;
               case R.id.tour:
                   startActivity(new Intent(getActivity(), TourActivity.class));
                   break;
               case R.id.movie:
-                  startActivity(new Intent(getActivity(), VoitmeActivity.class));
+                  startActivity(new Intent(getActivity(), CinemaTicketActivity.class));
                   break;
               case R.id.group:
-                  startActivity(new Intent(getActivity(), GroupActivity.class));
+                  startActivity(new Intent(getActivity(), ShopingRebataActivity.class));
                   break;
           } 
             

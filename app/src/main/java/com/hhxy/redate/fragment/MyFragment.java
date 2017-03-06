@@ -15,9 +15,9 @@ import android.widget.Toast;
 import com.hhxy.redate.R;
 import com.hhxy.redate.view.IUsableRebateView;
 import com.hhxy.redate.view.MessageActivity;
+import com.hhxy.redate.view.ReceivedGetRebateActivity;
 import com.hhxy.redate.view.SetActivity;
 import com.hhxy.redate.view.StayRebateActivity;
-import com.hhxy.redate.view.TotalRebateActivity;
 import com.hhxy.redate.view.UsableRebateActivity;
 
 import butterknife.BindView;
@@ -80,7 +80,7 @@ public class MyFragment extends Fragment implements IUsableRebateView{
                 startActivity(new Intent(getActivity(), UsableRebateActivity.class));
                 break;
             case R.id.leijifanli:
-                startActivity(new Intent(getActivity(), TotalRebateActivity.class));
+                startActivity(new Intent(getActivity(), ReceivedGetRebateActivity.class));
                 break;
             case R.id.daifanli:
                 startActivity(new Intent(getActivity(), StayRebateActivity.class));

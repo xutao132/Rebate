@@ -11,7 +11,7 @@ import com.hhxy.redate.constant.Constants;
 /**
  * 饿了吗
  */
-public class TakeActivity extends AppCompatActivity {
+public class HungryActivity extends AppCompatActivity {
     private WebView webview_take;
     private TextView top_title;
     private Constants mConstants;

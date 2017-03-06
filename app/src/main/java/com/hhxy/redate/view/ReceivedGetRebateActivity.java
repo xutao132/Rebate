@@ -19,7 +19,7 @@ import butterknife.OnClick;
  * Created by Administrator on 2017/3/6.
  */
 
-public class TotalRebateActivity extends AppCompatActivity{
+public class ReceivedGetRebateActivity extends AppCompatActivity{
     @BindView(R.id.my_webView)
     WebView webView;
     @BindView(R.id.my_top_title)

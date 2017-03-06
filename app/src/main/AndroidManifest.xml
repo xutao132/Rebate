@@ -22,14 +22,14 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".view.TourActivity" />
-        <activity android:name=".view.GroupActivity" />
-        <activity android:name=".view.TakeActivity" />
-        <activity android:name=".view.VoitmeActivity" />
+        <activity android:name=".view.ShopingRebataActivity" />
+        <activity android:name=".view.HungryActivity" />
+        <activity android:name=".view.CinemaTicketActivity" />
         <activity android:name=".view.CardActivity"></activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".view.UsableRebateActivity" />
         <activity android:name=".view.MessageActivity"></activity>
-        <activity android:name=".view.TotalRebateActivity"/>
+        <activity android:name=".view.ReceivedGetRebateActivity"/>
         <activity android:name=".view.StayRebateActivity"/>
         <activity android:name=".view.SetActivity"/>
     </application>
