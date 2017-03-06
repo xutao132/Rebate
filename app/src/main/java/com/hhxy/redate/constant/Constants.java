@@ -48,7 +48,7 @@ public class Constants {
     //全网秒杀
     public static String QuanWangMiaoShaURL = "http://fun.fanli.com/api/user/gourl?u_id=182742150&verify_code=c2846d1d717571620774186b08f31cc4&url=http%2525253A%2525252F%2525252Fshop.fanli.com%2525252Fh5%2525252Fshopseckill%2525253Fspm%2525253Dshop_miaosha_home.h5.pty-uv%252525257Emodule-entrance%25252526devid%2525253D64943571930122%25252526c_aver%2525253D1.0%25252526c_src%2525253D2%25252526c_v%2525253D5.7.0.34%25252526abtest%2525253D60505_c-5f82%25252526c_nt%2525253Dwifi%25252526mc%2525253D56&devid=64943571930122&c_aver=1.0&c_src=2&c_v=5.7.0.34&abtest=60505_c-5f82";
     //京东商城
-//    String JingDongShangChengURL = "https://h5.m.jd.com/dev/qqm4hw8zMjZjspYuimTBaFt7QYk/index.html?cu=true&utm_source=kong&utm_medium=tuiguang&utm_campaign=t_36857_1&utm_term=1999e40f19a74e708036fb6933155ed9&abt=3";
+    //   String JingDongShangChengURL = "https://h5.m.jd.com/dev/qqm4hw8zMjZjspYuimTBaFt7QYk/index.html?cu=true&utm_source=kong&utm_medium=tuiguang&utm_campaign=t_36857_1&utm_term=1999e40f19a74e708036fb6933155ed9&abt=3";
 
     //超级满减
     public static String ChaoJiManJianURL = "http://fun.fanli.com/api/user/gourl?u_id=182742150&verify_code=c2846d1d717571620774186b08f31cc4&url=http%2525253A%2525252F%2525252Fsuper.fanli.com%2525252Fh5%2525252Fpromotion%2525253Fdevid%2525253D64943571930122%25252526c_aver%2525253D1.0%25252526c_src%2525253D2%25252526c_v%2525253D5.7.0.34%25252526abtest%2525253D60505_c-5f82%25252526c_nt%2525253Dwifi%25252526mc%2525253D56&devid=64943571930122&c_aver=1.0&c_src=2&c_v=5.7.0.34&abtest=60505_c-5f82";

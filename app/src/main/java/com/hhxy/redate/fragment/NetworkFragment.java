@@ -7,8 +7,10 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 
 import com.hhxy.redate.R;
+import com.hhxy.redate.constant.Constants;
 
 /**
  * Created by Administrator on 2017/3/1.
@@ -16,6 +18,8 @@ import com.hhxy.redate.R;
  */
 
 public class NetworkFragment extends Fragment{
+    private Constants mConstants;
+    private WebView webview;
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -30,18 +34,12 @@ public class NetworkFragment extends Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.network_itme,null);
-        initdate();
+        
+        webview = (WebView) view.findViewById(R.id.webview_newwork);
+        webview.loadUrl(mConstants.ShangChengFanLiURL);
+        webview.getSettings().setJavaScriptEnabled(true);
         return view;
     }
-    private void initdate() {
-        findview();
-        
-    }
-    private void findview() {
-        
-        
-    }
-
    ///**当从Activity中解除Fragment的关联时
     @Override
     public void onDestroyView() {

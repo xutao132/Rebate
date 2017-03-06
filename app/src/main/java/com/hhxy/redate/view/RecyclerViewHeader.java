@@ -87,10 +87,7 @@ public class RecyclerViewHeader extends RelativeLayout {
             }
         });
     }
-
-    /**
-     * Detaches <code>RecyclerViewHeader</code> from <code>RecyclerView</code>.
-     */
+    
     public final void detach() {
         if (isAttachedToRecycler) {
             isAttachedToRecycler = false;
@@ -382,7 +379,7 @@ public class RecyclerViewHeader extends RelativeLayout {
             } else if (grid != null) {
                 return grid.getReverseLayout();
 //            } else if (staggeredGrid != null) {
-//                return ; //TODO: 05.04.2016 implement staggered
+//                return ;
             }
             return false; //shouldn't get here
         }

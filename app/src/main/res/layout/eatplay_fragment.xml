@@ -1,11 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="吃玩住行"
-        />
-
-</LinearLayout>
+   <include layout="@layout/top_item"/>
+      <TextView
+          android:layout_marginTop="1dp"
+          android:id="@+id/tour"
+          android:layout_width="match_parent"
+          android:layout_height="70dp"
+          android:background="@mipmap/tour" />
+      <TextView
+          android:layout_marginTop="1dp"
+          android:id="@+id/group"
+          android:layout_width="match_parent"
+          android:layout_height="70dp"
+          android:background="@mipmap/group" />
+      <TextView
+          android:layout_marginTop="1dp"
+          android:id="@+id/take_out"
+          android:layout_width="match_parent"
+          android:layout_height="70dp"
+          android:background="@mipmap/take_out" />
+      <TextView
+          android:layout_marginTop="1dp"
+          android:id="@+id/movie"
+          android:layout_width="match_parent"
+          android:layout_height="70dp"
+          android:background="@mipmap/movie" />
+      <TextView
+          android:layout_marginTop="1dp"
+          android:id="@+id/card"
+          android:layout_width="match_parent"
+          android:layout_height="70dp"
+          android:background="@mipmap/card" />
+   </LinearLayout>
+       
+    
+    
+    
+   

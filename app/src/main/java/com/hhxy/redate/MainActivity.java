@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         transaction.commit();
 
     }
-
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
        switch (checkedId){
